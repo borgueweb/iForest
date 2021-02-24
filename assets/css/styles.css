@@ -1,0 +1,49 @@
+#fondo-bosque {
+  position: absolute;
+}
+
+.navbar-light .navbar-brand {
+  background-image: url("../../assets/img/2logo%20vector%20IFOREST.svg");
+  background-position: center;
+  background-size: cover;
+  width: 117px;
+  height: 57px;
+}
+
+.panel {
+  width: 100%;
+  height: 100vh;
+}
+
+#boton-contacto {
+  background-color: #5e6267;
+  color: rgb(255,255,255);
+}
+
+.display-1 {
+  margin-top: 30px;
+  color: rgb(94,98,103);
+}
+
+#footer {
+}
+
+.social {
+  color: rgb(255,255,255);
+  font-size: 30px;
+  margin: 14px;
+}
+
+#footer {
+}
+
+#Panel-3 {
+  background-color: #5e6267;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 17px;
+  width: 817px;
+}
+
