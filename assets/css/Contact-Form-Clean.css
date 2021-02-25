@@ -102,3 +102,10 @@
   background-color: #5e6267;
 }
 
+#panel-1 {
+  background-image: url("../../assets/img/foggy-forest%20edited-1.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
