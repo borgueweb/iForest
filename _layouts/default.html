@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>iForest</title>
+    <title>{{ page.title }}</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
@@ -27,8 +27,30 @@
 </head>
 
 <body style="font-family: Montserrat, sans-serif;">
-    {{content}}
-    <footer id="panel-4" class="panel">
+    <div class="container-fluid position-absolute" id="navbar_top">
+        <nav class="navbar navbar-light navbar-expand-xl px-0">
+            <div class="container-fluid px-0"><a class="navbar-brand" href="index.html"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="ley-probosque.html">Ley Probosque</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Mantenimiento (Raleo)</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Reforestaciones</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Comercialización de Madera</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    {% assign title = page.title %}
+    {% if page.home != true %} <div class="first"></div> {% endif %}
+    
+    {{ content }}
+
+    <footer id="panel-4" class="">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 item text"><img src="assets/img/2logo%20vector%20IFOREST.svg" width="40%"></div>
@@ -49,7 +71,7 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
+    
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/fixed-nav.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
