@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -15,60 +16,19 @@
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
     <link rel="stylesheet" href="assets/css/Social-Icons.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-<script>   
-    $(function() {
-            $.scrollify({
-                section : ".panel",
-            });
-    });            
-</script>
+    {% seo %}
 </head>
 
 <body style="font-family: Montserrat, sans-serif;">
-    <div class="container-fluid position-absolute" id="navbar_top">
-        <nav class="navbar navbar-light navbar-expand-xl px-0">
-            <div class="container-fluid px-0"><a class="navbar-brand" href="index.html"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
-                    id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html">Inicio</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="ley-probosque.html">Ley Probosque</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Mantenimiento (Raleo)</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Reforestaciones</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Comercialización de Madera</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+
+    {% include navbar.html %}
 
     {% assign title = page.title %}
     {% if page.home != true %} <div class="first"></div> {% endif %}
     
     {{ content }}
 
-    <footer id="panel-4" class="panel">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 item text"><img src="assets/img/2logo%20vector%20IFOREST.svg" width="40%"></div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3 class="text-light">Contacto</h3>
-                    <p class="text-white mb-0">17 ave. 19-70 Z.10 Edificio Torino, Oficina 1011, Ciudad de Guatemala, 01010, Guatemala&nbsp;</p><a class="text-white" href="mailto:proyectos@iforest.com">proyectos@iforest.com</a></div>
-                <div class="col-sm-6 col-md-3 item">
-                    <h3 class="text-light">Síganos</h3>
-                    <ul class="list-unstyled"></ul><a href="https://www.instagram.com/iforestgt/"><i class="icon ion-social-instagram social"></i></a></div>
-            </div>
-            <div class="row">
-                <div class="col-6 offset-3 d-flex justify-content-center"><a href="#"></a><a href="#"></a><a href="#"></a><a href="#"></a></div>
-            </div>
-            <div class="row">
-                <div class="col-4 offset-4">
-                    <p class="text-center text-white-50 text-white mt-2">iForest © 2021</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include footer.html %}
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/fixed-nav.js"></script>

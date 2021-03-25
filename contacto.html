@@ -1,17 +1,40 @@
 ---
 layout: default
-title: Contacto
+title: IFOREST | Contacto
+description: Industrias Forestales
+image: assets/img/logo-iforest.png
+social:
+    name: IFOREST
+    Links: https://www.instagram.com/iforestgt/
 ---
     <div class="d-flex d-xl-flex justify-content-center align-items-center align-items-xl-center container-fluid panel" id="panel-3">
         <div class="container d-flex justify-content-center align-items-center">
-            <form>
+
+            <form action="https://usebasin.com/f/bdd2447ed03a" method="post">
+
+
                 <div class="form-group">
                     <h1 class="display-4">Contacto</h1>
                 </div>
-                <div class="form-group"><input class="form-control" type="text" required="" autocomplete="on" inputmode="latin-name" placeholder="Nombre"></div>
-                <div class="form-group"><input class="form-control" type="text" required="" inputmode="email" autocomplete="on" placeholder="Dirección de correo electrónico"></div>
-                <div class="form-group"><textarea class="form-control" placeholder="Mensaje" style="height: 184px;"></textarea></div>
-                <div class="form-group"><button class="btn btn-primary" type="submit">Enviar</button></div>
+
+                <div class="form-group">
+                    <input name="nombre" class="form-control" type="text" required autocomplete="on" inputmode="latin-name" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                    <input id="email" class="form-control" type="email" required inputmode="email" autocomplete="on" placeholder="Dirección de correo electrónico" name="Email">
+                </div>
+
+                <div class="form-group"  requiered>
+                    <textarea class="form-control" placeholder="Mensaje" name="mensaje" style="height: 184px;"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Enviar</button>
+                </div>
+
+
             </form>
+
         </div>
     </div>

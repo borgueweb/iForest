@@ -1,0 +1,13 @@
+- name: Inicio
+  link: /
+- name: Ley Probosque
+  link: /ley-probosque.html
+- name: Mantenimiento (Raleo)
+  link: #
+- name: Reforestaciones
+  link: #
+- name: Comercialización de Madera
+  link: #
+- name: Contacto
+  link: /contacto.html
+
