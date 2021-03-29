@@ -1,4 +1,115 @@
 ---
+
 ---
-@import "main";
+#fondo-bosque {
+  position: absolute;
+}
+
+.navbar-light .navbar-brand {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 57px;
+}
+
+.gray-logo {
+  background-image: url( "{{ site.data.images.logo-over-white }}");
+
+}
+
+.bg-white #navbar-logo {
+  background-image: url("{{ site.data.images.logo-over-white }}");
+}
+
+.white-logo {
+  background-image: url( "{{ site.data.images.logo-over-img }}");
+}
+
+#boton-contacto {
+  background-color: #5e6267;
+  color: rgb(255,255,255);
+}
+
+.display-1 {
+  margin-top: 30px;
+  color: rgb(94,98,103);
+}
+
+#footer {
+}
+
+.social {
+  color: rgb(255,255,255);
+  font-size: 30px;
+  margin: 14px;
+}
+
+#footer {
+}
+
+#Panel-3 {
+  background-color: #5e6267;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 17px;
+  width: 817px;
+}
+
+.display-4 {
+  color: rgb(94,98,103);
+}
+
+#panel-4 {
+  background-color: #000000;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+#panel-3 {
+}
+
+#panel-1 {
+  background-image: url("{{ site.data.images.cover-img }}");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+@media (min-width: 1200px) {
+  #panel-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    filter: brightness(100%);
+    background-position: center;
+  }
+}
+
+
+body {
+  font-family: {{ site.data.main-font.name }};
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+a {
+  color: black;
+}
+
+
 
