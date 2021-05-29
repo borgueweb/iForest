@@ -1,0 +1,216 @@
+---
+
+---
+{% assign green = "#2d7835" %}
+/*main font*/
+@font-face {font-family: "AvenirNextRoundedPro-Reg";
+  src: url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.eot"); /* IE9*/
+  src: url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.woff2") format("woff2"), /* chrome、firefox */
+  url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.woff") format("woff"), /* chrome、firefox */
+  url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("/assets/fonts/Avenir/3b114d63b02026b0c7077f0e55a95dda.svg#AvenirNextRoundedPro-Reg") format("svg"); /* iOS 4.1- */
+}
+/*end main font*/
+/*arrow icons*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/assets/fonts/Avenir/icomoon.eot?45ibj0');
+  src:  url('/assets/fonts/icomoon.eot?45ibj0#iefix') format('embedded-opentype'),
+    url('/assets/fonts/icomoon.ttf?45ibj0') format('truetype'),
+    url('/assets/fonts/icomoon.woff?45ibj0') format('woff'),
+    url('/assets/fonts/icomoon.svg?45ibj0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up:before {
+  content: "\e900";
+}
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-arrow-left:before {
+  content: "\e903";
+}
+
+/*end arrow icons*/
+
+body {
+  font-family: AvenirNextRoundedPro-Reg;
+}
+
+#fondo-bosque {
+  position: absolute;
+}
+
+.navbar-light .navbar-brand {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 75px;
+}
+
+.gray-logo {
+  background-image: url( "{{ site.data.images.logo-over-white }}");
+
+}
+
+.bg-white #navbar-logo {
+  background-image: url("{{ site.data.images.logo-over-white }}");
+}
+
+.white-logo {
+  background-image: url( "{{ site.data.images.logo-over-img }}");
+}
+
+#boton-contacto {
+  background-color: #5e6267;
+  color: rgb(255,255,255);
+}
+
+.display-1 {
+  margin-top: 30px;
+  color: rgb(94,98,103);
+}
+
+#footer {
+}
+
+.social {
+  color: rgb(255,255,255);
+  font-size: 30px;
+  margin: 14px;
+}
+
+#footer {
+}
+
+#Panel-3 {
+  background-color: #5e6267;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 17px;
+  width: 817px;
+}
+
+.display-4 {
+  color: rgb(94,98,103);
+}
+
+#panel-4 {
+  background-color: #000000;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+#panel-3 {
+}
+
+#panel-1 {
+  background-image: url("{{ site.data.images.cover-img }}");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+@media (min-width: 1200px) {
+  #panel-2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    filter: brightness(100%);
+    background-position: center;
+  }
+}
+
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.table thead th {
+  vertical-align: middle;
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+
+a {
+  color: black;
+}
+ .next-page {
+  font-size: 59px
+ }
+
+.hero {
+  background-image: url(/assets/img/foggy-forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay{
+  height: inherit;
+  min-height: initial;
+  width: 100%;
+  left: 0;
+  background: {{ green }}8c;
+}
+.accordion .card, .accordion .card-header{
+  border: 0;
+  border-radius: 0;
+}
+
+.accordion .card{
+  margin-bottom: .5rem;
+}
+
+#tipos-de-proyecto .icon-arrow-down{
+  color: {{ green }};
+}
+
+#tipos-de-proyecto .card-header{
+  height: 86px;
+}
+
+.multi-col-info .row .column:not(:last-child){
+  border-right: 1px solid;
+  border-color: {{ green }};
+  border-width: 4px;
+}
+
+.list-unstyled li{
+  margin-bottom: 5px; 
+}
+
+.carousel-control-next, .carousel-control-prev{
+  opacity: 1;
+}
+footer{
+  font-size: 12px;
+}

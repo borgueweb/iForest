@@ -1,0 +1,177 @@
+- title: Plantaciones con fines industriales
+  desc: <p>Son proyectos que se establecen con el objetivo principal de producie madera de aserrío o materia prima para abastecer a la industria. Para proyectos se otorga incentivo por 6 años; 1 de establecimiento y 5 de mantenimiento.</p>
+        <p>En ésta categoría se incluyen las plantaciones de maderas preciosas y las plantaciones de hule.</p> 
+        <strong>Especies recomendadas para fines industriales</strong>
+  table: 
+        <thead>
+            <tr>
+                <th>Nombre Científico</th>
+                <th>Nomre Común</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pinus maximinoi</td>
+                <td>Pino candelillo</td>
+            </tr>
+            <tr>
+                <td>Pinus oocarpa</td>
+                <td>Pino colorado</td>
+            </tr>
+            <tr>
+                <td>Pinus garibea</td>
+                <td>Pino caribe</td>
+            </tr>
+            <tr>
+                <td>Abies guatemalensis</td>
+                <td>Pinabete</td>
+            </tr>
+            <tr>
+                <td>Cupressus lusitanica</td>
+                <td>Ciprés</td>
+            </tr>
+            <tr>
+                <td>Roseodendron donell-smithii</td>
+                <td>Palo blanco</td>
+            </tr>
+            <tr>
+                <td>Tectona grandis</td>
+                <td>Teca</td>
+            </tr>
+            <tr>
+                <td>Tabebuia rosea</td>
+                <td>Matilisguate</td>
+            </tr>
+            <tr>
+                <td>Vochysia guatemalensis</td>
+                <td>San Juan</td>
+            </tr>
+            <tr>
+                <td>Swietenia macrophylla</td>
+                <td>Caoba</td>
+            </tr>
+            <tr>
+                <td>Cedrela odorata</td>
+                <td>Cedro</td>
+            </tr>
+            <tr>
+                <td>Calophllum brasiliense</td>
+                <td>Santa Maria</td>
+            </tr>
+            <tr>
+                <td>Gmelina aborea</td>
+                <td>Cell Melina</td>
+            </tr>
+            <tr>
+                <td>Alnus jorullensis</td>
+                <td>Aliso</td>
+            </tr>
+            <tr>
+                <td>Dalbergia spp.</td>
+                <td>Rosul, cocobolo</td>
+            </tr>
+        </tbody>
+
+- title: Plantaciones con fines de producción de látex
+  desc: <p>Los proyectos de plantaciones forestales con la especie Hevea brasiliensis, podrán incentivarseen los departamentos de Petén, Izabal, Alta Verapáz y Quiché. se otorga únicamente durante el año de establecimiento de la plantación.</p>
+  table:
+
+- title: Plantaciones con fines energéticos
+  desc: <p>Son proyectos que se establecen con el objetivo principal de producir biomasa para combustible. Para estos proyectos se otorga incentivo por 5 años, 1 de establecimiento y 4 de mantenimiento</p><strong>Especies recomendadas para fines energéticos</strong>
+  table:                                 
+        <thead>
+            <tr>
+                <th>Nombre Científico</th>
+                <th>Nombre Común</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cassia grandis</td>
+                <td>Bucut</td>
+            </tr>
+            <tr>
+                <td>Casuarina equiesetifolia</td>
+                <td>Casuarina</td>
+            </tr>
+            <tr>
+                <td>Gliricida sepium</td>
+                <td>Medreado o madre cacao</td>
+            </tr>
+            <tr>
+                <td>Caesalpinia velutina</td>
+                <td>Aripin</td>
+            </tr>
+            <tr>
+                <td>Guazuma ulmifilia</td>
+                <td>Caulote</td>
+            </tr>
+            <tr>
+                <td>Leucanena leucocephala</td>
+                <td>Leucaena</td>
+            </tr>
+            <tr>
+                <td>Inga spp.</td>
+                <td>Paterna o cushin</td>
+            </tr>
+            <tr>
+                <td>Alnus acuminata</td>
+                <td>Aliso o ilamo</td>
+            </tr>
+            <tr>
+                <td>Grevillea robusta</td>
+                <td>Gravilea</td>
+            </tr>
+            <tr>
+                <td>Eucalyptus spp.</td>
+                <td>Eucalipto</td>
+            </tr>
+            <tr>
+                <td>Quercus spp.</td>
+                <td>Encino</td>
+            </tr>
+            <tr>
+                <td>Hematoxylum brasiletto</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>Cordia alliodora</td>
+                <td>Laurel de costa</td>
+            </tr>
+            <tr>
+                <td>Tabebuia rosea</td>
+                <td>Matilisguate</td>
+            </tr>
+            <tr>
+                <td>Byrsonima crassifolia</td>
+                <td>Nance</td>
+            </tr>
+            <tr>
+                <td>Alvaradoa amorphoides</td>
+                <td>Plumajillo</td>
+            </tr>
+            <tr>
+                <td>Acacia farnesiana</td>
+                <td>Subin</td>
+            </tr>
+            <tr>
+                <td>Punus serotina subsp. capuli</td>
+                <td>Capulín</td>
+            </tr>
+            <tr>
+                <td>Liquidambar styraciflua</td>
+                <td>Liquidámbar</td>
+            </tr>
+            <tr>
+                <td>Tecoma stans</td>
+                <td>Timboque, flor amarilla</td>
+            </tr>
+            <tr>
+                <td>Diphysa americana</td>
+                <td>Guachipilín</td>
+            </tr>
+            <tr>
+                <td>Terminalia obolonga</td>
+                <td>Volador</td>
+            </tr>
+        </tbody>
