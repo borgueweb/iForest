@@ -14,12 +14,12 @@
                     
                 </a>
                 <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse"
+                <div class="collapse navbar-collapse justify-content-md-center pt-4"
                     id="navcol-1">
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav" style="background: rgba(255, 255, 255, 0.34); ">
 
                           {% for item in site.data.navbar %}
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item px-3 text-uppercase" role="presentation">
                                 <a  href="{{ item.link }}" class="nav-link {% if page.url == item.link %} active {% endif %}">
                                   {{ item.name }}
                                 </a>
@@ -32,3 +32,10 @@
             </div>
         </nav>
     </div>
+
+    <style>
+        #navcol-1::after{
+            content: "";
+            width: 117px;
+        }
+    </style>

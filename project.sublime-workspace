@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"col-lg",
+				"col-lg-6\t(proyectos.html)"
+			],
+			[
+				"tipo",
+				"tipos-de-proyecto\tabc"
+			],
+			[
+				"col-l",
+				"col-lg-6\tabc"
+			],
+			[
+				"icon",
+				"icon-arrow-left\t(styles.css)"
+			],
+			[
 				"ass",
 				"assets\tabc"
 			],
@@ -47,39 +63,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "---\nlayout: default\ntitle: IFOREST | Ley Probosque\ndescription: Industrias Forestales\nimage: assets/img/logo-iforest.png\nsocial:\n    name: IFOREST\n    Links: https://www.instagram.com/iforestgt/\n---\n\n    <div class=\" probosque-hero text-light text-shadow\"> \n        <div class=\"row overlay py-5 mx-0 justify-content-center\">\n            <div class=\"col-sm-8\">\n                <h1 class=\"text-uppercase\">¿ Qué es Probosque?</h1>\n                <p>Es un Programa que tiene como objetivo promover y fomentar el desarrollo forestal del país mediante el manejo sostenible de bosques, reducir la deforestación de tierras de vocación forestal, promover la reforestación de áreas forestales actualmente sin bosque, e incrementar su productividad.</p>                      \n            </div>\n      \n        </div>           \n\n        \n    </div>\n    <div class=\"container pt-3\">\n        <section>\n\n            <div class=\"row mt-3\">\n                <div class=\"col-12 col-md-7 col-xl-6 d-flex flex-column justify-content-center order-2 order-md-1 py-2\">\n                    <h1 class=\"text-uppercase\">Incentivos</h1>\n                    <ul>\n                        <li>Plantaciones forestales</li>\n                        <li>Sistemas Agroforestales</li>\n                        <li>manejo de plantaciones forestales voluntarias registradas como fuentes semilleras</li>\n                        <li>Manejo de bosques naturales</li>\n                        <li>Restauración de tierras forestales degradadas</li>\n                    </ul>\n                </div>\n                <div class=\"col-12 col-md-5 order-1 m-auto order-md-2 \"><img src=\"assets/img/environmental-protection-326923_1920.jpg\" class=\"w-100\"></div>\n            </div>\n        </section>\n        <section class=\"my-4\">\n            <h1 class=\"text-uppercase\">Modalidad de plantaciones forestales</h1>\n            <div class=\"row py-2\">\n                <div class=\"col-12 col-md-7 order-md-2\">\n                    <h3 class=\"text-uppercase\">Objetivos</h3>\n                    <ul>\n                        <li>Incrementar la productividad forestal mediante el establecimiento de plantaciones forestales con fines industriales, energéticos, disminuyendo la presión sobre los bosques naturales y otros recursos asociados.</li>\n                        <li>Establecer plantaciones con fines industriales para abastecer a la industria de matería prima.</li>\n                        <li>Generar empleo en el área rural y apoyar al desarrollo de las comunidades para mejorar las condiciones dr vida de la población.</li>\n                        <li>Promover el establecimiento de plantaciones forestales con características de buen crecimiento y desarrollo que garanticen la inversión del Estado</li>\n                        <li>Establecer plantaciones con fines energéticos con el objetivo de minimizar el aprovechamiento de praductos del bosque para la generación de energía. </li>\n                        <li>Brindar una alternativa energética a las comunidades del área rural.</li>\n                    </ul>\n                </div>\n                <div class=\"col m-auto order-md-1 \"><img src=\"assets/img/trees-3410846_1920.jpg\" class=\"w-100\"></div>\n            </div>\n            <div class=\"row\">\n                <div id=\"tipos-de-proyecto\"  class=\"col-6\">\n                    <h3 class=\"text-uppercase\">Tipos de proyecto</h3>\n                    <div class=\"accordion\" id=\"AccordionTDP\">\n                     {% assign hn = 1 %}   \n                     {% for item in site.data.project-types-mpf %}\n                          \n                      <div class=\"card\">\n                        <div class=\"card-header\" id=\"heading-{{ hn }}\">\n                            <button class=\"btn btn-block text-left h-100\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapse-{{ hn }}\" aria-expanded=\"true\" aria-controls=\"collapse-{{ hn }}\">\n                              <span class=\"row justify-content-between\">\n                                  <span class=\"col-10 my-auto h5\">\n                                     {{item.title}} \n                                  </span>\n                                  <span class=\"col-auto\">\n                                     <i class=\"icon-arrow-down h1\"></i> \n                                  </span>\n                              </span>    \n                            </button>\n                        </div>\n                        <div id=\"collapse-{{ hn }}\" class=\"collapse\" aria-labelledby=\"heading-{{ hn }}\" data-parent=\"#AccordionTDP\">\n                            <div class=\"card-body\">\n                                {{item.desc}}\n                                <div class=\"table-responsive\">\n                                    <table class=\"table table-hover\">\n                                        {{ item.table}}\n                                    </table>\n                                </div>\n                            </div>\n                        </div>\n                      </div>\n\n                      {% assign hn = hn | plus: 1 %} \n                      {% endfor %}\n                    </div>\n                </div>\n\n                <div class=\"col-6\">\n                    <div class=\"carousel slide\" data-ride=\"carousel\">\n                      <div class=\"carousel-inner\">\n                        <div class=\"carousel-item active\">\n                          <img class=\"d-block w-100\" src=\"assets/img/trees-3410846_1920.jpg\" alt=\"First slide\">\n                        </div>\n                        <div class=\"carousel-item\">\n                          <img class=\"d-block w-100\" src=\"assets/img/trees-3410846_1920.jpg\" alt=\"Second slide\">\n                        </div>\n                        <div class=\"carousel-item\">\n                          <img class=\"d-block w-100\" src=\"assets/img/trees-3410846_1920.jpg\" alt=\"Third slide\">\n                        </div>\n                      </div>\n                      <a class=\"carousel-control-prev\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"prev\">\n                        <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only\">Previous</span>\n                      </a>\n                      <a class=\"carousel-control-next\" href=\"#carouselExampleControls\" role=\"button\" data-slide=\"next\">\n                        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n                        <span class=\"sr-only\">Next</span>\n                      </a>\n                    </div>\n                </div>  \n\n            <h3 class=\"mt-4\">Montos por hectárea a incentivar por tipo de proyecto</h3>\n            <div class=\"table-responsive text-center d-xl-flex\">\n                <table class=\"table table-hover\">\n                <thead class=\"text-center\">\n                    <tr>\n                        <th>Fase</th>\n                        <th>Plantación con fines industriales</th>\n                        <th>Plantación con fines industriales para maderas preciosas</th>\n                        <th>Plantación con fines energéticos</th>\n                        <th>Plantación con fines de producción de látex</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td>Establecimiento</td>\n                        <td>7,900.00</td>\n                        <td>10,100.00</td>\n                        <td>6,400.00</td>\n                        <td>7,900.00</td>\n                    </tr>\n                    <tr>\n                        <td>Mantenimiento 1</td>\n                        <td>3,000.00</td>\n                        <td>3,800.00</td>\n                        <td>2,500.00</td>\n                        <td>0.00</td>\n                    </tr>\n                    <tr>\n                        <td>Mantenimiento 2</td>\n                        <td>2,500.00</td>\n                        <td>3,200.00</td>\n                        <td>2,400.00</td>\n                        <td>0.00</td>\n                    </tr>\n                    <tr>\n                        <td>Mantenimiento 3</td>\n                        <td>2,000.00</td>\n                        <td>2,500.00</td>\n                        <td>2,000.00</td>\n                        <td>0.00</td>\n                    </tr>\n                    <tr>\n                        <td>Mantenimiento 4</td>\n                        <td>1,900.00</td>\n                        <td>2,400.00</td>\n                        <td>1,500.00</td>\n                        <td>0.00</td>\n                    </tr>\n                    <tr>\n                        <td>Mantenimiento 5</td>\n                        <td>1,000.00</td>\n                        <td>1,300.00</td>\n                        <td>0.00</td>\n                        <td>0.00</td>\n                    </tr>\n                </tbody>\n                <tfoot>\n                    <tr>\n                        <td>Total</td>\n                        <td>18,300</td>\n                        <td>23,300.00</td>\n                        <td>14,800.00</td>\n                        <td>7,900.00</td>\n                    </tr>\n                </tfoot>\n                </table>\n            </div>\n        </section>\n    </div>\n    <div class=\"container multi-col-info\">\n        <div class=\"row mb-5\">\n            <div class=\"column col-6 px-5 py-2\">\n                <h3>¿Quiénes pueden beneficiarse?</h3>\n                <ul class=\"list-unstyled\">\n                    <li>- Municipalidades</li>\n                    <li>- Comités</li>\n                    <li>- Personas individuales</li>\n                    <li>- Asociaciones</li>\n                    <li>- Fundaciones</li>\n                    <li>- ONG</li>\n                    <li>- Empresas</li>\n                    <li>- Cooperativas</li>\n                    <li>- Comunidades indígenas o cualesquiera otras formas de tenencia comunal o colectiva de propiedad agraria</li>\n                    <li>- Arrendatarios en areas de reserva de la nación</li>\n                </ul>\n            </div>\n            <div class=\"column col-6 px-5 py-2\">\n                <h3>Requisitos para ingresar proyectos</h3>\n                <ul class=\"list-unstyled\">\n                    <li>- Solicitud de ingreso en formulario</li>\n                    <li>- Plan de manejo forestal, según modalidad</li>\n                    <li>- Documento que acredite el derecho sobre el inmueble</li>\n                    <li>- Copia del Documento Personal de Identificación -DPI-</li>\n                </ul>\n            </div>        \n        </div>        \n    </div>\n\n",
-			"file": "ley-probosque.html",
-			"file_size": 10675,
-			"file_write_time": 132667056434393063,
-			"settings":
-			{
-				"buffer_size": 10619,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "---\n---\n<!DOCTYPE html>\n<html>\n\n<head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\">\n    <title>{{ page.title }}</title>\n    <link rel=\"stylesheet\" href=\"assets/bootstrap/css/bootstrap.min.css\">\n    <link rel=\"stylesheet\" href=\"assets/fonts/ionicons.min.css\">\n    <link rel=\"stylesheet\" href=\"assets/css/Contact-Form-Clean.css\">\n    <link rel=\"stylesheet\" href=\"assets/css/Footer-Basic.css\">\n    <link rel=\"stylesheet\" href=\"assets/css/Footer-Dark.css\">\n    <link rel=\"stylesheet\" href=\"https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css\">\n    <link rel=\"stylesheet\" href=\"assets/css/Social-Icons.css\">\n    <link rel=\"stylesheet\" href=\"assets/css/styles.css\">\n    {% seo %}\n</head>\n\n<body>\n\n    {% include navbar.html %}\n\n    {% assign title = page.title %}\n    {% if page.home != true %} <div class=\"first\"></div> {% endif %}\n    \n    {{ content }}\n\n    {% include footer.html %}\n    <script src=\"assets/js/jquery.min.js\"></script>\n    <script src=\"assets/js/jquery.mobile-1.4.5.min.js\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js\"></script> \n    <script src=\"assets/js/carousel-slide.js\"></script>\n    <script src=\"assets/bootstrap/js/bootstrap.min.js\"></script>\n    <script src=\"assets/js/fixed-nav.js\"></script>\n    <script src=\"https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js\"></script>\n</body>\n\n</html> ",
-			"file": "_layouts/default.html",
-			"file_size": 1534,
-			"file_write_time": 132667054044252678,
-			"settings":
-			{
-				"buffer_size": 1534,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/css/styles.css",
-			"settings":
-			{
-				"buffer_size": 4159,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -124,20 +107,26 @@
 		"/Users/borgue/Documents/GitHub/iForest",
 		"/Users/borgue/Documents/GitHub/iForest/_data",
 		"/Users/borgue/Documents/GitHub/iForest/_includes",
-		"/Users/borgue/Documents/GitHub/iForest/_layouts",
 		"/Users/borgue/Documents/GitHub/iForest/assets",
-		"/Users/borgue/Documents/GitHub/iForest/assets/js"
+		"/Users/borgue/Documents/GitHub/iForest/assets/css"
 	],
 	"file_history":
 	[
+		"/Users/borgue/Documents/GitHub/El Papi/ELPAPI.html",
+		"/Users/borgue/Documents/GitHub/iForest/_includes/footer.html",
+		"/Users/borgue/Documents/GitHub/iForest/assets/css/styles.css",
+		"/Users/borgue/Documents/GitHub/iForest/contacto.html",
+		"/Users/borgue/Documents/GitHub/iForest/proyectos.html",
+		"/Users/borgue/Documents/GitHub/iForest/ley-probosque.html",
+		"/Users/borgue/Documents/GitHub/iForest/_data/navbar.yml",
+		"/Users/borgue/Documents/GitHub/iForest/_data/protectos.yml",
+		"/Users/borgue/Documents/GitHub/iForest/_layouts/default.html",
 		"/Users/borgue/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/borgue/Library/Application Support/Sublime Text 3/Packages/User/All Autocomplete.sublime-settings",
 		"/Users/borgue/Documents/GitHub/iForest/assets/bootstrap/js/carousel-slide.js",
 		"/Users/borgue/Library/Application Support/Sublime Text 3/Packages/AutoFileName/autofilename.sublime-settings",
 		"/Users/borgue/Documents/GitHub/iForest/assets/bootstrap/js/bootstrap.min.js",
-		"/Users/borgue/Documents/GitHub/iForest/_layouts/default.html",
 		"/Users/borgue/Documents/GitHub/iForest/_data/main-font.yml",
-		"/Users/borgue/Documents/GitHub/iForest/assets/css/styles.css",
 		"/Users/borgue/Documents/GitHub/iForest/_data/project-types-mpf.yml",
 		"/Users/borgue/Documents/GitHub/iForest/_includes/navbar.html",
 		"/Users/borgue/Documents/GitHub/iForest/assets/css/styles.scss",
@@ -148,7 +137,7 @@
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -188,99 +177,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "ley-probosque.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10619,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6581,
-								6581
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1527.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_layouts/default.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1534,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1534,
-								1534
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Liquid/Syntaxes/Liquid-HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/css/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4159,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4155,
-								4155
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2127.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
 			]
 		}
 	],
