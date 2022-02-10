@@ -1,0 +1,27 @@
+{% assign title = page.title %}
+<div class="hero text-light text-shadow" 
+style="background-image:url(assets/img/
+{%- case title -%}
+  {%- when "IFOREST | Contacto"-%}
+  pexels-pille-kirsi-1093184
+  {%- when "IFOREST | Ley Probosque" -%}
+  pexels-thiago-japyassu-1563604
+  {%- when "IFOREST | Proyectos" -%}
+  pexels-holiho-1112186
+{%- endcase -%}.jpg);"> 
+    <div class="row overlay py-5 mx-0 justify-content-center">
+        <div class="col-sm-8">
+            <h1 class="text-uppercase display-4 text-light">
+            	{%- case title -%}
+            		{%- when "IFOREST | Contacto" -%}
+            		Contacto
+            		{%- when "IFOREST | Ley Probosque" -%}
+            		¿Qué es probosque?
+            		{%- when "IFOREST | Proyectos" -%}
+            		Proyectos
+            		
+            	{%- endcase -%}
+            </h1>
+        </div>
+    </div>                  
+</div>

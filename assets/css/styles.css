@@ -169,17 +169,16 @@ a {
  }
 
 .hero {
-  background-image: url(../img/foggy-forest.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 .overlay{
   height: inherit;
   min-height: initial;
   width: 100%;
   left: 0;
-  background: {{ green }}8c;
 }
 .accordion .card, .accordion .card-header{
   border: 0;
