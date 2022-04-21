@@ -172,7 +172,7 @@ a {
 
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
 }
 .overlay{
   height: inherit;
@@ -209,7 +209,14 @@ a {
 
 .carousel-control-next, .carousel-control-prev{
   opacity: 1;
+  /*color: #5e6267;*/
+  text-shadow: 1px 1px 4px #30313278;
 }
 footer{
   font-size: 12px;
 }
+
+.carousel-item img{
+  max-height: 300px;
+}
+
