@@ -209,8 +209,11 @@ a {
 
 .carousel-control-next, .carousel-control-prev{
   opacity: 1;
-  /*color: #5e6267;*/
-  text-shadow: 1px 1px 4px #30313278;
+  color: #2d7835;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+  color: #2d7835f5;
 }
 footer{
   font-size: 12px;
