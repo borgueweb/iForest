@@ -209,11 +209,11 @@ a {
 
 .carousel-control-next, .carousel-control-prev{
   opacity: 1;
-  color: #2d7835;
+  color: {{ green }};
 }
 
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
-  color: #2d7835f5;
+  color: {{ green }}f5;
 }
 footer{
   font-size: 12px;

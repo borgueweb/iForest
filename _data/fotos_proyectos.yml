@@ -1,16 +1,16 @@
-- address: assets/img/fotos_proyectos/plantaciones/plantaciones1.JPG
+- address: assets/img/fotos_proyectos/plantaciones/plantaciones1.jpg
   type: plantaciones
 
-- address: assets/img/fotos_proyectos/plantaciones/plantaciones2.JPG
+- address: assets/img/fotos_proyectos/plantaciones/plantaciones2.jpg
+  type: plantacion
+
+- address: assets/img/fotos_proyectos/plantaciones/plantaciones3.jpg
   type: plantaciones
 
-- address: assets/img/fotos_proyectos/plantaciones/plantaciones3.JPG
+- address: assets/img/fotos_proyectos/plantaciones/plantaciones4.jpg
   type: plantaciones
 
-- address: assets/img/fotos_proyectos/plantaciones/plantaciones4.JPG
-  type: plantaciones
-
-- address: assets/img/fotos_proyectos/plantaciones/plantaciones5.JPG
+- address: assets/img/fotos_proyectos/plantaciones/plantaciones5.jpg
   type: plantaciones
 
 - address: assets/img/fotos_proyectos/comercializacion/comercializacion1.jpg
