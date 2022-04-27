@@ -13,7 +13,7 @@ social:
 		<div class="col-lg-6 order-lg-2 mt-lg-5 texto d-flex align-items-center">
 			<h2 class="text-uppercase">reforestaciones</h2>	
 		</div>
-		<div class="col-lg-6 order-lg-1 mt-lg-5 mb-4 imagen">
+		<div class="col-lg-6 order-lg-1 mt-lg-5 mb-4">
                 <div id="carousel-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         {% assign count = 0 %}
@@ -21,7 +21,7 @@ social:
                         {% if item.type == 'plantaciones' %}
                         {% assign count = count | plus: 1 %}
                         <div class="carousel-item {% if count == 1 %} active{% endif %}">
-                            <img class="d-block mx-auto" src="{{ item.address }}" alt="Slide {{ forloop.index }}">
+                            <img class="d-block mx-auto" src="{{ item.address }}">
                         </div> 
                         {% endif %}                           
                         {% endfor %}
